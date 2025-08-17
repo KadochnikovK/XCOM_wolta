@@ -1997,9 +1997,25 @@ a {
   flex-direction: column;
   gap: 30px;
 }
+.description__star {
+  height: 16px;
+}
+@media (min-width: 640px) {
+  .description__star {
+    height: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .description__star {
+    height: 32px;
+  }
+}
 .description__name {
   font-size: 20px;
   font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 @media (min-width: 640px) {
   .description__name {
