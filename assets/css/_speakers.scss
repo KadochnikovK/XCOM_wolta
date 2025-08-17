@@ -152,7 +152,7 @@
                 font-size: 200px;
             }
 
-            
+
             @media (min-width: 1200px) {
                 font-size: 300px;
             }
@@ -173,6 +173,15 @@
 
         &--left {
             margin: 0 30px 30px 0;
+        }
+
+        @media (min-width: 640px) {
+            border: 3px solid #A3A3A3;
+        }
+
+
+        @media (min-width: 1200px) {
+            border: 6px solid #A3A3A3;
         }
     }
 }
