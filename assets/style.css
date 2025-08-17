@@ -1937,10 +1937,12 @@ a {
 }
 @media (min-width: 1200px) {
   .description__bg-item {
+    transform: rotateX(0);
     bottom: -50px;
     height: 50vw;
     width: 100%;
     left: -30vw;
+    top: auto;
   }
 }
 .description__content {

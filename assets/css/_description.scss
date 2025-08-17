@@ -11,13 +11,12 @@
         left: -30vw;
 
         @media (min-width: 1200px) {
-
+            transform: rotateX(0);
             bottom: -50px;
             height: 50vw;
             width: 100%;
             left: -30vw;
-
-            // z-index: -1;
+            top: auto; // z-index: -1;
         }
     }
 
