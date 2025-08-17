@@ -1,0 +1,117 @@
+.conditions {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2xl);
+    }
+
+    &__notice {
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+        font-family: 'Second';
+        font-size: var(--fs-sm);
+        color: var(--color-white);
+        padding-left: 20px;
+        border-left: 1px solid var(--color-white);
+
+        @media (min-width: 640px) {
+            font-size: var(--fs-lg);
+        }
+
+        @media (min-width: 1200px) {
+            font-size: var(--fs-lg);
+        }
+    }
+
+    &__steps {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 840px) {
+            flex-direction: row;
+        }
+    }
+
+    &__step {
+        flex: 1;
+        display: flex;
+        height: 100%;
+        /* Добавлено */
+        height: max-content;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        border-radius: 14px;
+        border: 1px solid var(--color-orange);
+        padding: var(--space-xl);
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        @media (min-width: 840px) {
+            height: auto;
+            /* Изменено */
+        }
+    }
+
+    &__connector {
+        width: 1px;
+        height: 30px;
+        background: var(--gradient-orange);
+        margin-top: auto;
+        margin-bottom: auto;
+
+        @media (min-width: 840px) {
+            height: 1px;
+            width: 40px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 60px;
+        }
+    }
+
+    &__number {
+        font-size: var(--fs-4xl);
+        font-weight: 600;
+        line-height: 1;
+        // margin-bottom: var(--space-md);
+
+        @media (min-width: 640px) {
+            font-size: var(--fs-6xl);
+        }
+
+        @media (min-width: 1200px) {
+            font-size: var(--fs-8xl);
+        }
+    }
+
+    &__text {
+        font-family: 'Second';
+        font-size: var(--fs-sm);
+        text-align: center;
+        color: var(--color-white);
+
+        @media (min-width: 640px) {
+            font-size: var(--fs-md);
+        }
+
+        @media (min-width: 1200px) {
+            font-size: var(--fs-xl);
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .gradient-text {
+        background: var(--gradient-orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}

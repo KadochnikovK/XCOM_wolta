@@ -1,0 +1,52 @@
+.prizes {
+    position: relative;
+    padding: var(--space-4xl) 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('./assets/images/gift.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 80%;
+        opacity: 0.2;
+        z-index: -1;
+
+        @media (min-width: 640px) {
+            background-size: auto 90%;
+            opacity: 0.3;
+        }
+
+        @media (min-width: 1200px) {
+            background-size: contain;
+            opacity: 0.4;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__text {
+        font-family: 'Second';
+        color: var(--color-white);
+        font-size: var(--fs-xl);
+        line-height: var(--lh-md);
+
+
+        @media (min-width: 640px) {
+            font-size: var(--fs-3xl);
+
+        }
+
+        @media (min-width: 1200px) {
+            font-size: var(--fs-4xl);
+
+        }
+    }
+}
