@@ -79,6 +79,7 @@
 
     &__name {
         font-size: 16px;
+        font-weight: 700;
 
         @media (min-width: 640px) {
             font-size: 24px;
@@ -110,9 +111,14 @@
     }
 
     &__star {
-        font-size: 80px;
+        // font-size: 80px;
         height: 60px;
         font-weight: 600;
+
+        .star {
+            width: calc((1vw + 1vh) * 2);
+            max-width: 50px;
+        }
     }
 
 }

@@ -80,15 +80,16 @@
         font-size: 24px;
         font-weight: 600;
 
-        @media (min-width: 640px) {
+        @media (min-width: 480px) {
             font-size: 32px;
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 640px) {
             font-size: 44px;
         }
 
-        @media (min-width: 1600px) {
+
+        @media (min-width: 1200px) {
             font-size: 60px;
         }
     }
@@ -96,25 +97,26 @@
     &__description {
         font-size: 14px;
 
-        @media (min-width: 640px) {
+        @media (min-width: 480px) {
             font-size: 18px;
         }
 
-        @media (min-width: 1200px) {
+        @media (min-width: 640px) {
             font-size: 24px;
         }
 
-        @media (min-width: 1600px) {
-            font-size: 36px;
+
+
+        @media (min-width: 1200px) {
+            font-size: 32px;
         }
     }
 
     &__item-bottom {
         width: 100%;
         height: 40vw;
-        background-color: #A3A3A3;
-        border-radius: 0 30px 30px 30px;
-        padding: 30px;
+        display: flex;
+        position: relative;
         // height: 100%;
         // width: 100%;
 
@@ -133,38 +135,110 @@
         background-color: #A3A3A3;
         border-radius: 30px 30px 0 0;
         // height: 100%;
-        width: 100%;
+        width: 50%;
         position: relative;
-        max-height: calc(20vw + 30px);
-        padding: 0 30px;
+        // max-height: calc(20vw + 30px);
+        padding: 30px;
 
+        &--border {
+            background-color: rgba(0, 0, 0, 0);
+            border: 4px solid #A3A3A3;
+            border-bottom: 0;
+        }
 
         &--left {
             text-align: right;
         }
 
-        &::after {
-            content: "*";
-            font-size: 150px;
-            font-weight: 700;
+        .star {
+            width: 10vw;
+            max-width: 190px;
+        }
 
-            @media (min-width: 640px) {
-                font-size: 200px;
-            }
+        // &::after {
+        //     content: url(./assets/images/star.svg);
+        //     width: 20vw;
+        //     font-weight: 700;
+
+        //     @media (min-width: 640px) {
+        //         font-size: 200px;
+        //     }
 
 
-            @media (min-width: 1200px) {
-                font-size: 300px;
-            }
+        //     @media (min-width: 1200px) {
+        //         font-size: 300px;
+        //     }
+
+        // }
+    }
+
+    &__text {
+        position: absolute;
+        left: 5vw;
+        right: 5vw;
+        top: 5vw;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 640px) {
+            left: 2vw;
+            right: 2vw;
+            top: 2vw;
+        }
+
+        &--white {
+            color: var(--color-white);
+        }
+
+        &--left {
+            align-items: end;
+        }
+    }
+
+    &__left {
+        height: 100%;
+        width: 50%;
+        background-color: #A3A3A3;
+        border-radius: 0 0 0 30px;
+        padding: 30px;
+
+        &--left {
+            border-radius: 30px 0 0 30px;
+        }
+
+        &--border {
+            background-color: rgba(0, 0, 0, 0);
+            border: 4px solid #A3A3A3;
+            border-right: 0;
 
         }
+    }
+
+    &__right {
+        height: 100%;
+        width: 50%;
+        background-color: #A3A3A3;
+        border-radius: 0 30px 30px 0;
+        padding: 30px;
+
+        &--left {
+            border-radius: 0 0 30px 0;
+        }
+
+        &--border {
+            background-color: rgba(0, 0, 0, 0);
+
+            border: 4px solid #A3A3A3;
+            border-left: 0;
+            border-top: 0;
+        }
+
     }
 
 
     &__photo {
         margin: 0 0 30px 30px;
-        width: 20vw;
-        height: 20vw;
+        width: calc(50% - 30px);
+        aspect-ratio: 1;
         border: 2px solid #A3A3A3;
         // aspect-ratio: 1;
         background: #fff;
