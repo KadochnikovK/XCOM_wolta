@@ -920,8 +920,18 @@ a {
 }
 .speakers__star--border {
   background-color: rgba(0, 0, 0, 0);
-  border: 4px solid #A3A3A3;
+  border: 2px solid #A3A3A3;
   border-bottom: 0;
+}
+@media (min-width: 640px) {
+  .speakers__star--border {
+    border-width: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .speakers__star--border {
+    border-width: 6px;
+  }
 }
 .speakers__star--left {
   text-align: right;
@@ -963,8 +973,18 @@ a {
 }
 .speakers__left--border {
   background-color: rgba(0, 0, 0, 0);
-  border: 4px solid #A3A3A3;
+  border: 2px solid #A3A3A3;
   border-right: 0;
+}
+@media (min-width: 640px) {
+  .speakers__left--border {
+    border-width: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .speakers__left--border {
+    border-width: 6px;
+  }
 }
 .speakers__right {
   height: 100%;
@@ -978,9 +998,19 @@ a {
 }
 .speakers__right--border {
   background-color: rgba(0, 0, 0, 0);
-  border: 4px solid #A3A3A3;
+  border: 2px solid #A3A3A3;
   border-left: 0;
   border-top: 0;
+}
+@media (min-width: 640px) {
+  .speakers__right--border {
+    border-width: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .speakers__right--border {
+    border-width: 6px;
+  }
 }
 .speakers__photo {
   margin: 0 0 30px 30px;
@@ -989,11 +1019,15 @@ a {
   border: 2px solid #A3A3A3;
   background: #fff;
   border-radius: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .speakers__photo--left {
   margin: 0 30px 30px 0;
+}
+.speakers__photo--contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
 }
 @media (min-width: 640px) {
   .speakers__photo {
@@ -1924,15 +1958,15 @@ a {
 .program__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 2vw;
 }
 .program__list-item {
-  flex-basis: calc(50% - 15px);
+  flex-basis: calc(50% - 1vw - 1px);
   border-radius: 30px;
-  max-width: calc(50% - 15px);
+  max-width: calc(50% - 1vw - 1px);
   background-color: var(--color-white);
   border: 2px solid var(--color-dark);
-  padding: 30px;
+  padding: 3vw 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1953,8 +1987,8 @@ a {
 }
 @media (min-width: 1200px) {
   .program__list-item {
-    max-width: calc(25% - 22.5px);
-    flex-basis: calc(25% - 22.5px);
+    max-width: calc(25% - 1.5vw - 1px);
+    flex-basis: calc(25% - 1.5vw - 1px);
   }
 }
 .program__name {

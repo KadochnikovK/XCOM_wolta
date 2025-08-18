@@ -38,17 +38,17 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 2vw;
     }
 
     &__list-item {
-        flex-basis: calc(50% - 30px / 2);
+        flex-basis: calc(50% - 2vw / 2 - 1px);
         border-radius: 30px;
-        max-width: calc(50% - 30px / 2);
+        max-width: calc(50% - 2vw / 2 - 1px);
 
         background-color: var(--color-white);
         border: 2px solid var(--color-dark);
-        padding: 30px;
+        padding: 3vw 2vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -72,8 +72,8 @@
         }
 
         @media (min-width: 1200px) {
-            max-width: calc(25% - 30px * 3 / 4);
-            flex-basis: calc(25% - 30px * 3 / 4);
+            max-width: calc(25% - 2vw * 3 / 4 - 1px);
+            flex-basis: calc(25% - 2vw * 3 / 4 - 1px);
         }
     }
 
